@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Login App</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f6f8; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 350px; }
+        h2 { text-align: center; color: #333; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #4F46E5; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+        button:hover { background: #4338CA; }
+        .link { text-align: center; margin-top: 15px; font-size: 14px; }
+        .link a { color: #4F46E5; text-decoration: none; }
+    </style>
+</head>
+<>
+
+    <div class="card">
+        <h2>Create Account</h2>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="password" id="password" placeholder="Password (min 6 chars)" required>
+            <button type="submit">Register</button>
+        </form>
+        <div class="link">
+            Already have an account? <a href="login.html">Login here</a>
+        </div>
+    </div>
+...
+        <div class="link">
+            Already have an account? <a href="login.html">Login here</a>
+        </div>
+    </div>
+
+<!-- موبائل کنسول ٹول (Eruda) -->
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script>eruda.init();</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+    const SUPABASE_URL = 'https://pvqnkamqtgjvoihpuzoc.supabase.co';
+    const SUPABASE_ANON_KEY = 'sb_publishable_okJu8VwvSTa6KGhLZKR5EA_RBZt3bk3';
+
+    // ہم نے نام بدل کر mySupabase رکھ دیا ہے تاکہ پرانے نام سے ٹکراؤ نہ ہو
+    const mySupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const registerForm = document.getElementById('registerForm');
+        
+        if (registerForm) {
+            registerForm.addEventListener('submit', async function(e) {
+                e.preventDefault(); // پیج کو ریفریش ہونے سے روکنے کے لیے
+
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                try {
+                    const { data, error } = await mySupabase.auth.signUp({
+                        email: email,
+                        password: password
+                    });
+
+                    if (error) throw error;
+
+                    alert('اکاؤنٹ کامیابی سے بن گیا ہے!');
+                    window.location.href = 'login.html';
+
+                } catch (err) {
+                    alert('خرابی: ' + err.message);
+                }
+            });
+        }
+    });
+</script>

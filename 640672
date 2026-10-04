@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Login App</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f6f8; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
+        h2 { color: #333; margin-bottom: 10px; }
+        p { color: #666; margin-bottom: 20px; }
+        button { width: 100%; padding: 10px; background: #EF4444; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+        button:hover { background: #DC2626; }
+    </style>
+</head>
+<body>
+
+        <div class="card">
+        <h2 style="text-align: right; direction: rtl; color: #1b4332; margin-top: 0;">خوش آمدید!</h2>
+        
+        <hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
+
+        <h3 style="color: #1b4332; margin-bottom: 10px; font-size: 18px; text-align: right; direction: rtl;">📜 کورس: ختم نبوت</h3>
+        
+        <!-- باب اول -->
+        <a href="bab1.html" style="display: block; background: #f4f6f5; padding: 12px 15px; margin-bottom: 10px; border-radius: 6px; border-left: 5px solid #2d6a4f; text-decoration: none; color: #1b4332; font-weight: bold; font-size: 15px; text-align: right; direction: rtl;">
+            باب اول: عقیدہ ختم نبوت کا تعارف ➔
+        </a>
+
+        <!-- باب دوم -->
+        <a href="bab2.html" style="display: block; background: #f4f6f5; padding: 12px 15px; margin-bottom: 10px; border-radius: 6px; border-left: 5px solid #2d6a4f; text-decoration: none; color: #1b4332; font-weight: bold; font-size: 15px; text-align: right; direction: rtl;">
+            باب دوم: تحفظ ختم نبوت کے لیے قربانیاں ➔
+        </a>
+
+        <!-- باب سوم -->
+        <a href="bab3.html" style="display: block; background: #f4f6f5; padding: 12px 15px; margin-bottom: 10px; border-radius: 6px; border-left: 5px solid #2d6a4f; text-decoration: none; color: #1b4332; font-weight: bold; font-size: 15px; text-align: right; direction: rtl;">
+            باب سوم: قادیانیت کا تعارف ➔
+        </a>
+
+        <!-- لاگ آؤٹ بٹن -->
+        <button id="logoutBtn" style="background-color: #e76f51; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-size: 15px; width: 100%; margin-top: 15px; font-weight: bold;">لاگ آؤٹ (Logout)</button>
+    </div>
+
+    <!-- موبائل کنسول ٹول (Eruda) -->
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script>eruda.init();</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+    const SUPABASE_URL = 'https://pvqnkamqtgjvoihpuzoc.supabase.co';
+    const SUPABASE_ANON_KEY = 'sb_publishable_okJu8VwvSTa6KGhLZKR5EA_RBZt3bk3';
+
+    const mySupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    document.addEventListener('DOMContentLoaded', async function() {
+        // چیک کریں کہ کیا صارف لاگ ان ہے یا نہیں
+        const { data: { session } } = await mySupabase.auth.getSession();
+        
+        if (!session) {
+            // اگر صارف لاگ ان نہیں ہے تو اسے واپس لاگ ان پیج پر بھیج دیں
+            window.location.href = 'login.html';
+            return;
+        }
+
+        // لاگ آؤٹ بٹن کا فنکشن
+        const logoutBtn = document.getElementById('logoutBtn'); // یا آپ کے بٹن کی جو بھی ID ہو
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', async function() {
+                const { error } = await mySupabase.auth.signOut();
+                if (error) {
+                    alert('لاگ آؤٹ میں خرابی: ' + error.message);
+                } else {
+                    alert('آپ کامیابی سے لاگ آؤٹ ہو گئے ہیں!');
+                    window.location.href = 'login.html';
+                }
+            });
+        }
+    });
+</script>
