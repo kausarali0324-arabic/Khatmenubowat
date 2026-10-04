@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>باب دوم: تحفظِ ختمِ نبوت کے لیے قربانیاں</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f5;
+            margin: 0;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            width: 100%;
+            max-width: 650px;
+            text-align: right;
+            direction: rtl;
+            line-height: 1.8;
+            color: #2b2b2b;
+        }
+        h1 {
+            color: #1b4332;
+            font-size: 22px;
+            border-bottom: 2px solid #2d6a4f;
+            padding-bottom: 12px;
+            margin-top: 0;
+            text-align: center;
+        }
+        p.intro {
+            text-align: center;
+            color: #495057;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .lesson-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .lesson-item {
+            background: #f4f6f5;
+            padding: 14px 18px;
+            border-radius: 8px;
+            border-right: 5px solid #2d6a4f;
+            text-decoration: none;
+            color: #1b4332;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson-item:hover {
+            background: #e9eceb;
+            transform: translateX(-3px);
+        }
+        .lesson-item span {
+            font-size: 16px;
+            color: #1b4332;
+            font-weight: bold;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .back-btn {
+            background-color: #6c757d;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.2s;
+        }
+        .back-btn:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>📚 باب دوم: تحفظِ ختمِ نبوت کے لیے قربانیاں</h1>
+        <p class="intro">مطالعہ کے لیے درج ذیل درس منتخب کریں:</p>
+
+        <div class="lesson-list">
+            <a href="bab2_dars1.html" class="lesson-item">
+                درس 1: عہدِ نبوی ﷺ سے فتنۂ ارتداد تک — ختمِ نبوت کا تحفظ
+                <span>➔</span>
+            </a>
+            <a href="bab2_dars2.html" class="lesson-item">
+                درس 2: حضرت ابوبکر صدیقؓ اور صحابۂ کرامؓ کی تاریخی قربانیاں
+                <span>➔</span>
+            </a>
+            <a href="bab2_dars3.html" class="lesson-item">
+                درس 3: برصغیر میں تحفظِ ختمِ نبوت کی علمی و عملی جدوجہد
+                <span>➔</span>
+            </a>
+            <a href="bab2_dars4.html" class="lesson-item">
+                درس 4: 1953ء اور 1974ء کی تحریکاتِ ختمِ نبوت
+                <span>➔</span>
+            </a>
+            <a href="bab2_dars5.html" class="lesson-item">
+                درس 5: علماءِ امت کی خدمات اور آج ہماری ذمہ داریاں
+                <span>➔</span>
+            </a>
+        </div>
+
+        <!-- نیویگیشن بٹن - کورس کے مین ڈیش بورڈ کی طرف (جہاں تینوں باب موجود ہیں) -->
+        <div class="nav-buttons">
+            <a href="course_dashboard.html" class="back-btn">← واپس ڈیش بورڈ</a>
+        </div>
+    </div>
+
+</body>
+</html>
