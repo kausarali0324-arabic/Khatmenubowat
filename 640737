@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>باب سوم: قادیانیت کا تعارف - کورس ڈیش بورڈ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f5;
+            margin: 0;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            width: 100%;
+            max-width: 650px;
+            text-align: right;
+            direction: rtl;
+            line-height: 1.8;
+            color: #2b2b2b;
+        }
+        h1 {
+            color: #1b4332;
+            font-size: 22px;
+            border-bottom: 2px solid #2d6a4f;
+            padding-bottom: 12px;
+            margin-top: 0;
+            text-align: center;
+        }
+        p.intro {
+            font-size: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #495057;
+        }
+        .lesson-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .lesson-item {
+            background: #e9eceb;
+            padding: 14px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #1b4332;
+            font-weight: bold;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            transition: background 0.2s, transform 0.2s;
+            border-right: 4px solid #2d6a4f;
+        }
+        .lesson-item:hover {
+            background: #dde5b6;
+            transform: translateX(-3px);
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .btn {
+            flex: 1;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .back-btn {
+            background-color: #6c757d;
+            color: white;
+        }
+        .back-btn:hover {
+            background-color: #5a6268;
+        }
+        .home-btn {
+            background-color: #2d6a4f;
+            color: white;
+        }
+        .home-btn:hover {
+            background-color: #1b4332;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>📚 باب سوم: قادیانیت کا تعارف</h1>
+        <p class="intro">اس باب میں ہم قادیانیت کے تاریخی پس منظر، مرزا غلام احمد کے دعووں، عقیدۂ ختمِ نبوت کے علمی جائزے اور امتِ مسلمہ کے موقف کا مطالعہ کریں گے۔ ذیل میں دیے گئے اسباق پر کلک کر کے مطالعہ شروع کریں:</p>
+
+        <div class="lesson-list">
+            <a href="bab3_dars1.html" class="lesson-item">درس 1: قادیانیت کا تاریخی پس منظر اور مرزا غلام احمد قادیانی کا تعارف</a>
+            <a href="bab3_dars2.html" class="lesson-item">درس 2: مرزا غلام احمد قادیانی کے دعوے اور قادیانی عقائد</a>
+            <a href="bab3_dars3.html" class="lesson-item">درس 3: قادیانی شبہات اور قرآن و سنت کی روشنی میں ان کے جوابات</a>
+            <a href="bab3_dars4.html" class="lesson-item">درس 4: امتِ مسلمہ کا موقف اور تحفظِ ختمِ نبوت کی ذمہ داریاں</a>
+            <a href="bab3_dars5.html" class="lesson-item">درس 5: اس کورس سے اتفاق کرنے والے علماء کرام</a>
+        </div>
+
+        <!-- نیویگیشن بٹن -->
+        <div class="nav-buttons">
+            <a href="bab2.html" class="btn back-btn">⬅ باب دوم کی طرف</a>
+            <a href="dashboard.html" class="btn home-btn">🏠 مرکزی ڈیش بورڈ</a>
+        </div>
+    </div>
+
+</body>
+</html>
