@@ -1,0 +1,16 @@
+{
+  "name": "تحفظ ختم نبوت کورس",
+  "short_name": "TKN Course",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a5c36",
+  "description": "ختم نبوت کورس، اسباق اور تعلیمی مواد کا مجموعہ۔",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
