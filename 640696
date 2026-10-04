@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>باب اول: ختمِ نبوت کا تعارف</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f5;
+            margin: 0;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            width: 100%;
+            max-width: 450px;
+            text-align: right;
+            direction: rtl;
+        }
+        h2 {
+            color: #1b4332;
+            margin-top: 0;
+            font-size: 20px;
+            border-bottom: 2px solid #2d6a4f;
+            padding-bottom: 10px;
+        }
+        .lesson-btn {
+            display: block;
+            background: #f4f6f5;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border-left: 5px solid #2d6a4f;
+            text-decoration: none;
+            color: #1b4332;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+        .lesson-btn:hover {
+            background: #e9eceb;
+        }
+        .back-btn {
+            display: block;
+            background-color: #6c757d;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .back-btn:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>📚 باب اول: ختمِ نبوت کا تعارف</h2>
+        <p style="color: #555; font-size: 14px; margin-bottom: 15px;">مطالعہ کے لیے درج ذیل درس منتخب کریں:</p>
+        
+        <!-- درس 1 -->
+        <a href="bab1_dars1.html" class="lesson-btn">
+            درس 1: عقیدۂ ختمِ نبوت — مفہوم، اہمیت اور ضرورت ➔
+        </a>
+
+        <!-- درس 2 -->
+        <a href="bab1_dars2.html" class="lesson-btn">
+            درس 2: قرآنِ کریم میں ختمِ نبوت کے دلائل ➔
+        </a>
+
+        <!-- درس 3 -->
+        <a href="bab1_dars3.html" class="lesson-btn">
+            درس 3: احادیثِ نبوی ﷺ میں ختمِ نبوت کی وضاحت ➔
+        </a>
+
+        <!-- درس 4 -->
+        <a href="bab1_dars4.html" class="lesson-btn">
+            درس 4: صحابۂ کرامؓ، تابعین اور امت کا اجماعی عقیدہ ➔
+        </a>
+
+        <!-- درس 5 -->
+        <a href="bab1_dars5.html" class="lesson-btn">
+            درس 5: ختمِ نبوت کے انکار کا شرعی حکم اور اس کے نتائج ➔
+        </a>
+
+        <!-- بیک بٹن -->
+        <a href="dashboard.html" class="back-btn">⬅ واپس ڈیش بورڈ</a>
+    </div>
+
+</body>
+</html>
